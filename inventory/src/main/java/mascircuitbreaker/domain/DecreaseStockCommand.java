@@ -9,4 +9,8 @@ import lombok.Data;
 public class DecreaseStockCommand {
 
     private Integer qty;
+
+    @Id
+    //@GeneratedValue(strategy=GenerationType.AUTO)
+    private Long id;
 }

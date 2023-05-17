@@ -9,4 +9,7 @@ import lombok.Data;
 public class DecreaseStockCommand {
 
     private Integer qty;
+
+    @Id
+    private Long id;
 }
