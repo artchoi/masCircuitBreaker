@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/storming/f13dd72369f3618f9004754412e4868d
+www.msaez.io/#/storming/mascircuitbreaker
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
