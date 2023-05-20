@@ -21,4 +21,19 @@ public class PolicyHandler {
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
+
+    @StreamListener(
+        value = KafkaProcessor.INPUT,
+        condition = "headers['type']=='OrderPlaced'"
+    )
+    public void wheneverOrderPlaced_DecreseStock(
+        @Payload OrderPlaced orderPlaced
+    ) {
+        OrderPlaced event = orderPlaced;
+        System.out.println(
+            "\n\n##### listener DecreseStock : " + orderPlaced + "\n\n"
+        );
+        // Sample Logic //
+
+    }
 }

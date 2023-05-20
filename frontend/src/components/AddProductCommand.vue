@@ -2,7 +2,7 @@
 
     <v-card outlined>
         <v-card-title>
-            AddProductd
+            AddProduct
         </v-card-title>
 
         <v-card-text>
@@ -13,9 +13,9 @@
             <v-btn
                     color="deep-purple lighten-2"
                     text
-                    @click="addProductd"
+                    @click="addProduct"
             >
-                AddProductd
+                AddProduct
             </v-btn>
             
             <v-btn
@@ -33,7 +33,7 @@
 <script>
    
     export default {
-        name: 'AddProductdCommand',
+        name: 'AddProductCommand',
         components:{},
         props: {},
         data: () => ({
@@ -45,8 +45,8 @@
         watch: {
         },
         methods: {
-            addProductd() {
-                this.$emit('addProductd', this.value);
+            addProduct() {
+                this.$emit('addProduct', this.value);
             },
             close() {
                 this.$emit('closeDialog');

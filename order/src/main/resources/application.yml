@@ -49,7 +49,6 @@ logging:
 api:
   url:
     order: localhost:8081
-inventory: localhost:8082
 
 
 server:
@@ -84,6 +83,5 @@ spring:
 api:
   url:
     order:8080
-inventory:8080
 
 
